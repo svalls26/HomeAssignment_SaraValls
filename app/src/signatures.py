@@ -15,7 +15,7 @@ async def get_signatures(hex_signature: str, page_number: int = 1, page_size: in
     r_json = r.json()['results']
     list_function = []
     for i in range(len(r_json)):
-        list_function.append({"name":r_json[i]['text_signature']})
+        list_function.append({"name":r_json[i]['text_signature'].split('(', 1)[0]})
     
     start = (page_number - 1) * page_size
     end = start + page_size
