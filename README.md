@@ -10,6 +10,8 @@ The first endpoint communicates with a sample free node from <href>https://accou
 
 The second endpoint connects with <href>https://www.4byte.directory</href> and provides the functions name associated by the given signature.
 
+The framework used for the development is <a href="https://fastapi.tiangolo.com" target="_top">FastAPI</a>.
+
 ## How it works
 
 First step is making avaiable the libraries used in the development in our environment by: 
