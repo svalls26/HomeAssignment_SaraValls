@@ -6,4 +6,5 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
+from endpoints.blocks import *
 
