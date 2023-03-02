@@ -6,5 +6,5 @@ app = FastAPI()
 async def root():
     return {"message": "Home Page"}
 
-from endpoints.blocks import *
-
+from src.blocks import *
+from src.signatures import *
