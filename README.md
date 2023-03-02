@@ -19,3 +19,14 @@ pip install -r requirements.txt
 ```
 
 (Notice that sometimes the version of pip requires pip3 instead of pip)
+
+The next step is running the following command inside app folder:
+```
+uvicorn main:app --reload
+```
+
+Once the last step is done, the API will be working and the endpoints will be ready to use.
+To see the documentation: 
+```
+/docs
+```
