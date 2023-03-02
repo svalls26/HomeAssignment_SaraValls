@@ -9,7 +9,7 @@ class SignatureData(BaseModel):
     page_size: int
     is_last_page: bool
 
-@app.get("/signatures/{hex_signature}")
+@app.get("/signatures/{hex_signature}", response_model=SignatureData)
 async def get_signatures(hex_signature: str, page_number: int = 1, page_size: int = 10):
     r = requests.get(f'https://{SIGNATURES_URL_PROVIDER}/signatures?hex_signature={hex_signature}') 
     r_json = r.json()['results']
